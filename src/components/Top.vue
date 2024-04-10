@@ -61,7 +61,7 @@ export default {
     image.src = './image/theme.png';
     image.onload = () => {
       const canvas = document.createElement('canvas');
-      const length = image.width * 1.1;
+      const length = image.width;
       canvas.width = length;
       canvas.height = length;
       const ctx = canvas.getContext('2d');
