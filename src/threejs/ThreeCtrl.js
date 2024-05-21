@@ -3,7 +3,7 @@ const THREE = require('three');
 const OrbitControls = require('three-orbitcontrols');
 
 const RADIUS = 1;
-const SEGMENTS = 128;
+const SEGMENTS = 256;
 const THICKNESS = RADIUS / 5;
 
 function formatImageData(imageData) {
@@ -244,7 +244,7 @@ export default class {
     /* global GIF */
     const gif = new GIF({
       workers: 4,
-      quality: 10,
+      quality: 100,
       workerScript: './libs/gif.worker.js',
       width: this.imageData.width,
       height: this.imageData.height,
@@ -263,7 +263,7 @@ export default class {
     this.cameraCtrl.enabled = false;
     this.pause();
 
-    const frame = 20;
+    const frame = 60;
     const duration = 2;
     let index = 0;
     const addFrame = () => {

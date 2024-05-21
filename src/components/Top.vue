@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="main" :style="{ backgroundImage: 'url(./image/back.jpg)' }">
+    <div class="main" :style="{ background: 'black' }">
       <div class="container" ref="container"/>
       <div class="btnFrame">
         <div class="btnDesc">Let's Paint !</div>
